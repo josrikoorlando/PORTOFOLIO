@@ -1,0 +1,299 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f5f7;
+  color: #222;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  float: left;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #f7c948;
+}
+
+.landing-section {
+  background: #fff;
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 25px;
+  margin-bottom: 3rem;
+}
+
+.landing-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.landing-section .intro {
+  flex: 1 1 400px;
+}
+
+.landing-section .intro h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.landing-section .intro p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.landing-section .intro .btn {
+  background: #f7c948;
+  color: #222;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.landing-section .intro .btn:hover {
+  background: #e1b73a;
+}
+
+.landing-section .profile-pic {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.landing-section .profile-pic img {
+  width: 260px;
+  border-radius: 25px 25px 0 25px;
+  border: 3px solid #f7c948;
+}
+
+.skills-section {
+  background: #fff;
+  padding: 2rem 0;
+  border-radius: 25px;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.skills-section h2 {
+  margin-bottom: 2rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skill {
+  background: #8c7bff;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  font-weight: 700;
+  min-width: 140px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(140, 123, 255, 0.3);
+  cursor: default;
+  transition: background 0.3s ease;
+}
+
+.skill:hover {
+  background: #735bff;
+}
+
+.work-section {
+  background: #fff;
+  padding: 2rem 0;
+  border-radius: 25px;
+  margin-bottom: 3rem;
+}
+
+.work-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.reasons {
+  list-style: none;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reasons li {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.reasons li::before {
+  content: "✔";
+  color: #f7c948;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.achievements {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.achievements > div {
+  text-align: center;
+  background: #f7c948;
+  color: #222;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(247, 201, 72, 0.4);
+  min-width: 120px;
+}
+
+.achievements > div strong {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 0.3rem;
+}
+
+.contact-section {
+  background: #fff;
+  padding: 2rem 0;
+  border-radius: 25px;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-section form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.contact-section form textarea {
+  min-height: 100px;
+}
+
+.contact-section form button.btn {
+  background: #f7c948;
+  color: #222;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: 700;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.contact-section form button.btn:hover {
+  background: #e1b73a;
+}
+
+footer {
+  background: #222;
+  color: #eee;
+  padding: 1rem 0;
+  text-align: center;
+  border-radius: 0 0 25px 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .landing-section {
+    flex-direction: column;
+  }
+  .landing-section .intro,
+  .landing-section .profile-pic {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+  header h1,
+  header nav {
+    float: none;
+    text-align: center;
+  }
+  header nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
